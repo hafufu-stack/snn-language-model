@@ -1,0 +1,8 @@
+BitNet b1.58 + SNN Parallel Experiment
+========================================
+
+Ternary SNN PPL: 209.77
+Standard SNN PPL: 124.93
+Models trained: 8
+Ternary train time: 7.8s
+Standard train time: 2.9s
