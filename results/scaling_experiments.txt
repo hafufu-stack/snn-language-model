@@ -1,0 +1,19 @@
+Scaling Experiments Results
+========================================
+
+Sequence Length:
+  len=10: SNN=14.88, eff=1.48x
+  len=20: SNN=15.36, eff=1.50x
+  len=40: SNN=22.75, eff=1.52x
+  len=80: SNN=32.41, eff=1.52x
+
+Model Capacity:
+  h=100: SNN=14.25, sparse=7.1%
+  h=200: SNN=15.36, sparse=7.4%
+  h=400: SNN=23.45, sparse=7.5%
+
+Sample Efficiency:
+  10%: SNN=29.22, DNN=23.77 → DNN
+  25%: SNN=18.51, DNN=22.91 → SNN
+  50%: SNN=22.48, DNN=23.07 → SNN
+  100%: SNN=25.43, DNN=23.28 → DNN
