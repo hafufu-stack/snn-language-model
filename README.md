@@ -109,7 +109,7 @@ snn-language-model/
 
 ## 論文
 
-Coming soon on Zenodo / arXiv
+Funasaki, H. (2026). Hybrid Spiking Language Model: Combining Spike Counts and Membrane Potentials for Energy-Efficient and Noise-Robust Character Prediction. Zenodo. https://doi.org/10.5281/zenodo.18288582
 
 ## ライセンス
 
