@@ -1,0 +1,6 @@
+BitNet + SNN: Large Model Comparison
+========================================
+
+Ternary SNN (400 neurons): PPL=167.50
+Standard SNN (200 neurons): PPL=125.29
+PPL difference: +33.7%

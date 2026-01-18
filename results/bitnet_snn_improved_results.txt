@@ -1,0 +1,16 @@
+BitNet b1.58 + SNN: Improved STE Method
+========================================
+
+Improved Ternary SNN:
+  PPL: 214.84
+  Mult ops: 0.0M
+  Add ops: 297.7M
+  Time: 12.6s
+
+Standard SNN:
+  PPL: 196.24
+  Mult ops: 439.3M
+  Time: 10.7s
+
+Mult reduction: inf×
+PPL difference: +9.5%
