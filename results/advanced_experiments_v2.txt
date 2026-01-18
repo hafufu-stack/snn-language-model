@@ -1,0 +1,19 @@
+Advanced Experiments for Paper v2
+========================================
+
+Noise Robustness:
+  SNN at 0% noise: PPL=11.23
+  SNN at 10% noise: PPL=13.82
+  SNN at 20% noise: PPL=21.46
+  SNN at 30% noise: PPL=25.40
+  SNN at 50% noise: PPL=41.62
+
+Scaling:
+  h=50: SNN=10.62, Sparsity=7.7%
+  h=100: SNN=10.90, Sparsity=7.7%
+  h=200: SNN=11.23, Sparsity=7.6%
+  h=400: SNN=13.78, Sparsity=7.6%
+
+Equal-PPL:
+  SNN: h=100, ops=77.4M
+  DNN: h=200, ops=434.6M
