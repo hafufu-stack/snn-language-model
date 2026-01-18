@@ -1,0 +1,16 @@
+Memory & Ensemble Experiments Results
+========================================
+
+Long-Range Memory:
+  len=10: SNN=18.24, DNN=21.74
+  len=50: SNN=21.03, DNN=23.01
+  len=200: SNN=23.43, DNN=24.32
+
+Ensemble:
+  SNN Single:   12.58
+  SNN Ensemble: 12.35
+
+Time Resolution:
+  ts=5: PPL=17.29
+  ts=10: PPL=17.76
+  ts=20: PPL=19.02
