@@ -1,0 +1,14 @@
+Hybrid Effect & Learning Dynamics Results
+========================================
+
+Ablation Study:
+  spike: PPL=16.42
+  membrane: PPL=9.84
+  hybrid: PPL=9.90
+
+Hybrid improvement: 39.7%
+
+Full Comparison:
+  SNN: PPL=9.90, Ops=478.0M
+  DNN: PPL=11.28, Ops=673.7M
+  LSTM: PPL=15.67, Ops=2683.3M
