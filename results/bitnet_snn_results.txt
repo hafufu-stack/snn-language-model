@@ -1,0 +1,14 @@
+BitNet b1.58 + SNN Experiment Results
+========================================
+
+Ternary SNN:
+  PPL: 191.33
+  Multiplications: 5.0M
+  Additions: 59590.1M
+
+Standard SNN:
+  PPL: 154.23
+  Multiplications: 3894.9M
+
+Multiplication Reduction: 780.2×
+Energy Reduction: 2.6×
