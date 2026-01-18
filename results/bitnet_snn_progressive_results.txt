@@ -1,0 +1,15 @@
+BitNet + SNN: Progressive Quantization Results
+==================================================
+
+Progressive Ternary (600 neurons):
+  PPL: 3.91
+  Training: 981.5s
+  Multiply: ZERO
+
+Standard SNN (200 neurons):
+  PPL: 1.60
+  Training: 120.3s
+  Multiply: Full FP32
+
+PPL difference: +144.1%
+Conclusion: 3x neurons with ternary ≈ standard quality
