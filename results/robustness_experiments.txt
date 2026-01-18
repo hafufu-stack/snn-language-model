@@ -1,0 +1,17 @@
+Robustness & Compression Experiments
+========================================
+
+Adversarial Robustness:
+  ε=0.0: SNN=8.58, DNN=15.00
+  ε=0.5: SNN=35.22, DNN=20.19
+  ε=1.0: SNN=53.51, DNN=31.52
+
+Neuron Pruning:
+  100%: SNN=8.58, DNN=15.00
+  40%: SNN=11.95, DNN=21.99
+  20%: SNN=16.79, DNN=23.83
+
+Weight Quantization:
+  32-bit: SNN=8.58, DNN=15.00
+  4-bit: SNN=9.14, DNN=15.20
+  2-bit: SNN=20.33, DNN=24.23
