@@ -1,0 +1,12 @@
+SNN Language Model Results
+==================================================
+
+Traditional (Spike only):
+  Accuracy: 11.51%
+  Perplexity: 105.76
+
+Hybrid (Spike + Membrane):
+  Accuracy: 12.14%
+  Perplexity: 11.83
+
+Improvement: +0.63%

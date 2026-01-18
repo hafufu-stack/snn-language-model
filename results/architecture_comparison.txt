@@ -1,0 +1,21 @@
+SNN Language Model - Architecture Comparison Results
+==================================================
+
+Accuracy:
+  SNN-150: 9.56%
+  DNN-150: 32.55%
+  LSTM-100: 17.09%
+
+Noise Robustness (degradation at 30% noise):
+  SNN: -0.41%
+  DNN: 15.50%
+  LSTM: 3.54%
+
+Energy Efficiency:
+  SNN-150: 1.8257 acc/MOps
+  DNN-150: 0.0762 acc/MOps
+  LSTM-100: 0.0183 acc/MOps
+
+Findings:
+  ✅ SNN is MOST ROBUST to input noise!
+  ✅ SNN is MOST ENERGY EFFICIENT!

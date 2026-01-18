@@ -1,0 +1,35 @@
+SNN Language Model - Large Scale Comparison
+==================================================
+
+Training text: 22920 characters
+
+Accuracy Results:
+  SNN-300: Acc=10.24%, PPL=28.20, Time=23.3s
+  SNN-500: Acc=8.67%, PPL=37.19, Time=44.1s
+  SNN-600: Acc=8.22%, PPL=44.40, Time=90.4s
+  DNN-300: Acc=15.22%, PPL=46.27, Time=5.5s
+  DNN-500: Acc=10.83%, PPL=104.45, Time=11.2s
+  DNN-600: Acc=9.53%, PPL=134.40, Time=12.8s
+  LSTM-200: Acc=17.63%, PPL=81.77, Time=7.6s
+  LSTM-300: Acc=18.77%, PPL=41.28, Time=13.0s
+  LSTM-400: Acc=20.44%, PPL=35.81, Time=24.7s
+
+Noise Robustness:
+  SNN-500: -0.13% degradation
+  DNN-500: +3.06% degradation
+  LSTM-300: +1.05% degradation
+
+Energy Efficiency:
+  SNN-300: 0.1091 acc/MOps
+  SNN-500: 0.0333 acc/MOps
+  SNN-600: 0.0219 acc/MOps
+  DNN-300: 0.0026 acc/MOps
+  DNN-500: 0.0008 acc/MOps
+  DNN-600: 0.0005 acc/MOps
+  LSTM-200: 0.0015 acc/MOps
+  LSTM-300: 0.0008 acc/MOps
+  LSTM-400: 0.0005 acc/MOps
+
+Findings:
+  ✅ SNN is MORE ROBUST to noise at large scale!
+  ✅ SNN is 42.2x MORE ENERGY EFFICIENT!
