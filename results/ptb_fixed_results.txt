@@ -1,0 +1,9 @@
+PTB Benchmark (Fixed) Results
+========================================
+
+SNN: PPL=15.33, Ops=3213.3M
+DNN: PPL=15.14, Ops=360.0M
+LSTM: PPL=18.58, Ops=1434.0M
+
+SNN vs DNN ops: 0.1x
+SNN vs LSTM ops: 0.4x

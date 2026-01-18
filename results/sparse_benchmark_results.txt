@@ -1,0 +1,17 @@
+Sparse SNN Benchmark Results
+========================================
+
+SNN:
+  Perplexity: 14.51
+  Sparsity: 7.6%
+  Dense Ops: 3213.3M
+  Sparse Ops: 245.5M
+  Sparse Reduction: 13.1x
+
+DNN:
+  Perplexity: 15.14
+  Ops: 360.0M
+
+Efficiency:
+  Sparse SNN vs DNN: 1.47x
+  Energy ratio: 14.7x

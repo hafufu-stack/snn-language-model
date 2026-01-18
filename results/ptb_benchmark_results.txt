@@ -1,0 +1,25 @@
+Penn Treebank Style Benchmark Results
+==================================================
+
+Data: 26350 chars, vocab=28, seq_len=30
+Hidden size: 500
+Epochs: 3
+
+SNN:
+  Perplexity: 88862381.63
+  Operations: 52807.2M
+  Time: 23.8s
+
+DNN:
+  Perplexity: 102.78
+  Operations: 2784.8M
+  Time: 1.2s
+
+LSTM:
+  Perplexity: 22.78
+  Operations: 11124.6M
+  Time: 6.2s
+
+Efficiency ratios:
+  SNN vs DNN: 0.1x
+  SNN vs LSTM: 0.2x
