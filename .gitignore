@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 zenn_article.md
+paper_snn_lm.tex
+paper_snn_lm.zip
+*.tex
+*.zip
