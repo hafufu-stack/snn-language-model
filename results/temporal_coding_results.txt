@@ -1,0 +1,23 @@
+SNN Language Model - Temporal Coding Results
+==================================================
+
+Experiment 1: Ambiguous Words
+  bank-money: +0.0000
+  bank-river: +0.0000
+  bank-account: +0.0000
+  bank-water: +0.0000
+  money-account: +0.0000
+  river-water: +0.0000
+  money-river: +0.0000
+
+Experiment 2: Context Dependence
+  Mean latency difference: 0.00
+
+Experiment 3: Overcomplete Representation
+  Mean similarity: 1.0000
+  Std similarity: 0.0000
+
+Experiment 4: Information Capacity
+  Rate coding: 332 bits
+  Temporal coding: 564 bits
+  Combined: 897 bits

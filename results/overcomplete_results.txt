@@ -1,0 +1,10 @@
+SNN Overcomplete Representation Results
+==================================================
+
+Maximum ratio: 1x
+100 neurons can represent 100 words
+
+Compression vs one-hot:
+  Traditional: 1000 dims
+  SNN: 200 dims
+  Compression: 5.0x

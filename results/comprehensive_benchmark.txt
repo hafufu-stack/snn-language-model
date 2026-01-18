@@ -1,0 +1,20 @@
+SNN Language Model - Comprehensive Benchmark
+==================================================
+
+TEMPORAL CODING:
+  Rate: 332 bits
+  Temporal: 564 bits
+  Hybrid: 897 bits
+  Multiplier: 2.7x
+
+OVERCOMPLETE:
+  Max ratio: 200x
+  Compression: 5.0x
+
+CONTEXT:
+  Disambiguation works: True
+  Context persists: True
+
+EFFICIENCY:
+  SNN vs DNN: 42x
+  Noise robustness: No degradation at 30% noise

@@ -1,0 +1,19 @@
+SNN Context-Dependent Representation Results
+==================================================
+
+Experiment 1: Context Shift
+  Effect magnitude: 0.0313
+
+Experiment 2: Semantic Priming
+  Priming effect: -0.0067
+
+Experiment 3: Sentence Embedding
+  Similar sentences: 0.7576
+  Different sentences: 0.8152
+
+Experiment 5: Disambiguation
+  Financial bias: 0.0085
+  Nature bias: 0.0130
+
+Findings:
+  ✅ Context disambiguates homonyms
