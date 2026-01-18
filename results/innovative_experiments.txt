@@ -1,0 +1,10 @@
+Innovative Experiments Results
+========================================
+
+Transfer Learning:
+  SNN: -23.2% benefit
+  DNN: +27.8% benefit
+
+Catastrophic Forgetting:
+  SNN: 23.0% forgetting
+  DNN: 2.0% forgetting
