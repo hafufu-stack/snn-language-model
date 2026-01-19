@@ -1,0 +1,13 @@
+BitNet + SNN: Mixed Precision V2 Results
+==================================================
+
+Mixed Precision V2 (600n): PPL=20724.51
+Standard (200n): PPL=5.45
+
+Gap: +380474.1%
+
+Improvements in V2:
+- 600 neurons (vs 400 in V1)
+- Learnable scale factors
+- Xavier-like initialization
+- 15 epochs (vs 12 in V1)

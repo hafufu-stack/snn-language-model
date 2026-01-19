@@ -1,0 +1,6 @@
+BitNet + SNN: Mixed Precision V3 Results
+==================================================
+
+Mixed Precision V3 (500n): PPL=2.69
+Standard (200n): PPL=3.29
+Gap: -18.2%
