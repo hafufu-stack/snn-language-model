@@ -16,7 +16,19 @@ SNNベースの文字レベル言語モデル。**スパイク数と膜電位の
 | 📊 **最高精度** | SNN PPL=9.90 vs DNN=11.28 vs LSTM=15.67 |
 | 🧬 **ハイブリッド効果** | 膜電位で**+39.7%**改善 |
 | 💾 **スパース性** | わずか**7.6%**のニューロンが発火 |
-| ⚡ **効率スケーリング** | 長いシーケンスで効率向上（1.48x→1.52x）|
+| ⚡ **BitNet融合** | **Mixed Precisionで標準を超えた！** ✨NEW |
+
+### 🚀 BitNet b1.58 + SNN（新発見！）
+
+| Model | PPL | 備考 |
+|-------|-----|------|
+| **Mixed Precision (500n)** | **2.69** | **Standardを超えた！** ✅ |
+| Standard SNN (200n) | 3.29 | baseline |
+
+**キーポイント:**
+- 入出力: 連続値（精度維持）
+- リザーバ: 三値 {-1, 0, 1}（スパース性活用）
+- 結果: 50-70%の演算が**加算のみ**で済む！
 
 ## 最新実験結果（v2）
 
@@ -53,19 +65,6 @@ Dense計算: 3213M ops → Sparse計算: 245M ops
 → SNNは 14.7倍 エネルギー効率的！
 ```
 
-### スケーリング特性
-
-| Seq Length | Efficiency |
-|------------|------------|
-| 10 | 1.48x |
-| 20 | 1.50x |
-| 40 | 1.52x |
-| 80 | 1.52x |
-
-→ **長いシーケンスで効率向上！**
-
-
-
 ## インストール
 
 ```bash
@@ -77,35 +76,42 @@ pip install numpy
 ## 使い方
 
 ```bash
-# プロトタイプ実験（Traditional vs Hybrid）
-python snn_lm_prototype.py
+# コア実験
+python experiments/core/snn_lm_prototype.py
 
-# アーキテクチャ比較（SNN vs DNN vs LSTM）
-python snn_lm_comparison.py
+# BitNet実験（Mixed Precision推奨）
+python experiments/bitnet/snn_lm_bitnet_mixed_v3.py
 
-# 大規模実験（300-600ニューロン）
-python snn_lm_large_scale.py
-
-# 並列処理版（高速）
-python snn_lm_parallel.py
+# 高度な実験
+python experiments/advanced/snn_lm_robustness.py
 ```
 
 ## ファイル構成
 
 ```
 snn-language-model/
-├── snn_lm_prototype.py       # プロトタイプ（Hybrid vs Traditional）
-├── snn_lm_comparison.py      # アーキテクチャ比較
-├── snn_lm_large_scale.py     # 大規模実験
-├── snn_lm_parallel.py        # 並列処理版
-├── snn_lm_sparse.py          # スパース計算ベンチマーク ✨NEW
-├── snn_lm_hybrid_learning.py # ハイブリッド効果検証 ✨NEW
-├── snn_lm_scaling.py         # スケーリング特性 ✨NEW
-├── snn_lm_temporal_v2.py     # 時間符号化実験 ✨NEW
-├── snn_lm_overcomplete.py    # オーバーコンプリート表現 ✨NEW
-├── snn_lm_context.py         # 文脈依存表現 ✨NEW
-├── snn_lm_advanced_v2.py     # 論文v2用実験 ✨NEW
-└── results/                  # 実験結果
+├── experiments/
+│   ├── core/                  # コア実験
+│   │   ├── snn_lm_prototype.py
+│   │   ├── snn_lm_comparison.py
+│   │   ├── snn_lm_benchmark.py
+│   │   ├── snn_lm_sparse.py
+│   │   └── snn_lm_hybrid_learning.py
+│   ├── bitnet/                # BitNet融合実験 ✨NEW
+│   │   ├── snn_lm_bitnet.py
+│   │   ├── snn_lm_bitnet_mixed.py
+│   │   ├── snn_lm_bitnet_mixed_v3.py  ← 最良
+│   │   └── ...
+│   └── advanced/              # 高度な実験
+│       ├── snn_lm_robustness.py
+│       ├── snn_lm_scaling.py
+│       ├── snn_lm_innovative.py
+│       └── ...
+├── papers/                    # 論文
+│   ├── paper_snn_lm.tex
+│   └── paper_snn_lm_v2.tex
+├── results/                   # 実験結果
+└── README.md
 ```
 
 ## なぜSNNが優れているのか
@@ -118,13 +124,18 @@ snn-language-model/
 - **閾値機構**: 小さなノイズはスパイクに変換されない
 - **膜電位の平滑化**: 短期ノイズを吸収
 
-### 3. 生物学的妥当性
-- **デジタル（スパイク）+ アナログ（膜電位）** の両方を使用
-- 脳の意思決定プロセスに近い
+### 3. 圧縮耐性 ✨NEW
+- **80%ニューロン刈り込み**: それでもDNNより高品質
+- **4bit量子化**: 8倍メモリ圧縮、+6.6%劣化のみ
+
+### 4. BitNet融合 ✨NEW
+- **三値重み**: {-1, 0, 1} で乗算不要
+- **Mixed Precision**: 入出力連続+リザーバ三値が最適
 
 ## 論文
 
-Funasaki, H. (2026). Hybrid Spiking Language Model: Combining Spike Counts and Membrane Potentials for Energy-Efficient and Noise-Robust Character Prediction. Zenodo. https://doi.org/10.5281/zenodo.18288582
+- **v2 (最新)**: [Zenodo DOI: 10.5281/zenodo.18294033](https://zenodo.org/records/18294033)
+- v1: [Zenodo DOI: 10.5281/zenodo.18288582](https://doi.org/10.5281/zenodo.18288582)
 
 ## ライセンス
 
@@ -135,4 +146,3 @@ CC BY 4.0
 ろーる ([@hafufu-stack](https://github.com/hafufu-stack))
 *   **note**：[https://note.com/cell_activation](https://note.com/cell_activation) （日記や思いを発信）
 *   **Zenn**：[https://zenn.dev/cell_activation](https://zenn.dev/cell_activation) （プログラムの技術解説や構想を発信）
-
