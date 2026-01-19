@@ -1,0 +1,6 @@
+Ultimate SNN PRO: Large Scale Results
+==================================================
+
+Tested sequence lengths: 20, 30, 40
+PRO SNN: 500 neurons, 15 epochs, large data
+Standard: 200 neurons, 15 epochs
