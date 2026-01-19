@@ -1,0 +1,9 @@
+BitNet + SNN: Mixed Precision Results
+==================================================
+
+Mixed Precision (400n): PPL=26.01
+Full Ternary (400n): PPL=68.31
+Standard (200n): PPL=18.26
+
+Mixed vs Standard: +42.5%
+Mixed vs Full Ternary: -61.9%
