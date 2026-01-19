@@ -1,0 +1,12 @@
+Ultimate SNN: BitNet + RWKV + Hybrid Results
+==================================================
+
+Ultimate SNN (400n): PPL=10.59
+Standard (200n): PPL=18.71
+Gap: -43.4%
+
+Combined techniques:
+- BitNet: Ternary reservoir
+- RWKV: Time-mixing + Gate
+- Hybrid: Spike + Membrane
+- Mixed Precision
