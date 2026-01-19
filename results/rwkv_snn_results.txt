@@ -1,0 +1,6 @@
+RWKV-Inspired SNN Results
+==================================================
+
+RWKV-Inspired (300n): PPL=9.08
+Standard (200n): PPL=14.21
+Gap: -36.1%
