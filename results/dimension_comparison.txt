@@ -1,0 +1,12 @@
+Dimension Comparison Results
+========================================
+
+5D: PPL=32.5, Neurons=32, Connections=160
+6D: PPL=33.1, Neurons=64, Connections=384
+7D: PPL=34.1, Neurons=128, Connections=896
+8D: PPL=32.6, Neurons=256, Connections=2048
+9D: PPL=39.3, Neurons=512, Connections=4608
+10D: PPL=52.9, Neurons=1024, Connections=10240
+11D: PPL=66.6, Neurons=2048, Connections=22528
+
+Best: 5D

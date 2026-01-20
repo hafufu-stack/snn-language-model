@@ -1,0 +1,7 @@
+Extended Sequence Length Results
+========================================
+
+100: 11D=45.5, Random=53.4
+200: 11D=44.7, Random=53.2
+300: 11D=50.0, Random=56.5
+500: 11D=48.5, Random=54.2
