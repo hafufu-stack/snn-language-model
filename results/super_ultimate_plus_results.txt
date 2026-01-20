@@ -1,0 +1,8 @@
+Super Ultimate++ Experiment
+==================================================
+
+Super Ultimate++ PPL: 71.39 +/- 14.99
+Super Ultimate PPL: 43.72 +/- 7.73
+Gap: +63.3%
+
+Winner: Super Ultimate

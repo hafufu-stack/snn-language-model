@@ -1,0 +1,9 @@
+Combined Experiments: Progressive + Attention + Ultimate
+==================================================
+
+Progressive+Attention: PPL=1.25, gap=-30.1%
+Standard: PPL=1.79, gap=+0.0%
+Super Ultimate: PPL=1.21, gap=-32.2%
+
+Best: Super Ultimate with PPL=1.21
+Improvement: 32.2% over Standard

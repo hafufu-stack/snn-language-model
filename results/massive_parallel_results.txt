@@ -1,0 +1,6 @@
+Massive Parallel SNN: 22 Models
+==================================================
+
+Ultimate (400n x22): PPL=1.04, Time=504.7s
+Standard (200n x22): PPL=1.40, Time=51.0s
+Gap: -25.3%

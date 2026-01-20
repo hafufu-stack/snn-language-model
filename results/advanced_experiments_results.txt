@@ -1,0 +1,11 @@
+Advanced SNN Experiments: 5 Improvement Ideas
+==================================================
+
+attention: PPL=19.17, gap=-21.5%
+learnable_tau: PPL=61.33, gap=+151.0%
+multiscale: PPL=29.79, gap=+22.0%
+spike_timing: PPL=835.41, gap=+3319.7%
+progressive: PPL=17.59, gap=-28.0%
+standard: PPL=24.43, gap=+0.0%
+
+Best: progressive with PPL=17.59

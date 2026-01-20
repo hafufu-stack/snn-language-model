@@ -1,0 +1,11 @@
+Large-Scale Validation: Super Ultimate SNN
+==================================================
+
+Dataset: 120,037 characters
+Train: 6,400, Test: 1,601
+
+Super Ultimate PPL: 4.40 +/- 0.26
+Standard SNN PPL: 5.56 +/- 0.17
+Gap: -20.9%
+
+Validated: YES
