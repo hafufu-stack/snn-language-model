@@ -1,0 +1,8 @@
+11D Hypercube SNN Language Model
+========================================
+
+11D Hypercube PPL: 4303.44 (±4096.5)
+Standard SNN PPL: 175.24 (±82.5)
+Improvement: -2355.7%
+Training time: 1699.9s
+Models: 24 (24 parallel)
