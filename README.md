@@ -107,7 +107,9 @@ snn-language-model/
 │       ├── snn_lm_large_scale.py   ← 大規模検証
 │       ├── snn_lm_massive_parallel.py ← 並列実験
 │       └── ...
-├── papers/                    # 論文
+├── image_gen/                 # 画像生成実験（v4 NEW）
+│   ├── experiment_spike_membrane.py   ← スパイク+膜電位VAE
+│   └── experiment_membrane_comparison.py ← 膜電位重み比較
 ├── results/                   # 実験結果
 └── README.md
 ```
@@ -137,7 +139,8 @@ snn-language-model/
 
 ## 論文
 
-- **v3 (最新)**: [Zenodo](https://zenodo.org/records/18294117)
+- **v4 (最新)**: [Zenodo DOI: 10.5281/zenodo.18398245](https://zenodo.org/records/18398245) - 言語 + 画像生成（Spiking VAE追加）
+- v3: [Zenodo DOI: 10.5281/zenodo.18304632](https://zenodo.org/records/18304632)
 - v2: [Zenodo DOI: 10.5281/zenodo.18294033](https://zenodo.org/records/18294033)
 - v1: [Zenodo DOI: 10.5281/zenodo.18288582](https://doi.org/10.5281/zenodo.18288582)
 

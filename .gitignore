@@ -7,6 +7,7 @@ zenn_article*.md
 *_draft.md
 
 # Keep these local (upload manually via Zenodo)
+papers/
 paper_snn_lm.tex
 paper_snn_lm.zip
 paper_snn_lm_v2.tex
