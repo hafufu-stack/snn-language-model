@@ -7,8 +7,9 @@
 ## 概要
 
 SNNベースの文字レベル言語モデル。**BitNet + RWKV + Hybrid Readout + Progressive Training + Attention**を統合した**Ultimate SNN**で、従来のSNNアプローチより大幅な高精度と効率を実現。
+v4ではSNNによる画像生成にも挑戦し、将来的には画像生成と自然言語処理を統合したモデルを目指す。
 
-### 🔥 最新発見（2026年1月20日）
+### 🔥 v3（SNNによる言語学習）までの発見
 
 | 発見 | 結果 |
 |------|------|
@@ -18,13 +19,6 @@ SNNベースの文字レベル言語モデル。**BitNet + RWKV + Hybrid Readout
 | 🎯 **RWKV統合** | Time-mixingで**36.1%改善** |
 | 🔋 **エネルギー効率** | DNNの**14.7倍**効率的 |
 
-### 🆕 v4 NEW（2026年1月28日）
-
-| 発見 | 結果 |
-|------|------|
-| 🖼️ **Spiking VAE** | 50%膜電位で**57%損失改善** |
-| ✨ **Posterior Collapse解決** | KL>0達成（spike-onlyはKL=0） |
-| ⚡ **画像生成スパース性** | **96%**のスパイク削減 |
 
 ### 🏆 Ultimate SNN（新発見！）
 
@@ -40,6 +34,13 @@ SNNベースの文字レベル言語モデル。**BitNet + RWKV + Hybrid Readout
 - ✅ Progressive Training（4段階成長）
 - ✅ Attention（履歴参照）
 
+### 🆕 v4（SNNによる画像生成）での発見
+
+| 発見 | 結果 |
+|------|------|
+| 🖼️ **Spiking VAE** | 50%膜電位で**57%損失改善** |
+| ✨ **Posterior Collapse解決** | KL>0達成（spike-onlyはKL=0） |
+| ⚡ **画像生成スパース性** | **96%**のスパイク削減 |
 ## 主要実験結果
 
 ### 完全比較：SNN vs DNN vs LSTM
